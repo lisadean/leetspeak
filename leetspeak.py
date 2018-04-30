@@ -13,7 +13,10 @@ for c in text:
         new_string = new_string + c
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 print(new_string)
 =======
+=======
+>>>>>>> Stashed changes
 
 >>>>>>> Stashed changes
