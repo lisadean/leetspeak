@@ -13,4 +13,3 @@ for c in text:
         new_string = new_string + c
 
 print(new_string)
-
