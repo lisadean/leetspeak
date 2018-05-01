@@ -1,15 +1,24 @@
-text = "elite speak"
+def translate(input):
+    output = ""
+    for c in input:
+        output += substitute(c)
+    return output
 
-original = "AEGIOST"
-translation = "4361057"
 
-text = text.upper()
-
-new_string = ""
-for c in text:
-    if c in original:
-        new_string = new_string + translation[original.index(c)]
+def substitute(input):
+    original = "AEGIOST"
+    translation = "4361057"
+    input = input.upper()
+    if input in original:
+        output = translation[original.index(input)]
     else:
-        new_string = new_string + c
+        output = input
+    return output
 
-print(new_string)
+
+def main():
+    input = "elite speak"
+    print(translate(input))
+
+
+main()
